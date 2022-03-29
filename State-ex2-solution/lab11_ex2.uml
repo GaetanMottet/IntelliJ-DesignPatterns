@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ch.hevs.design_patterns.lab11_ex2</OriginalElement>
+  <nodes>
+    <node x="746.0" y="356.0">ch.hevs.design_patterns.lab11_ex2.state.Speaking</node>
+    <node x="751.2196428571428" y="0.0">ch.hevs.design_patterns.lab11_ex2.state.State</node>
+    <node x="1074.0" y="356.0">ch.hevs.design_patterns.lab11_ex2.state.InMeeting</node>
+    <node x="343.0" y="356.0">ch.hevs.design_patterns.lab11_ex2.state.WaitingToSpeak</node>
+    <node x="0.0" y="356.0">ch.hevs.design_patterns.lab11_ex2.state.Registered</node>
+    <node x="672.206994047619" y="777.0">ch.hevs.design_patterns.lab11_ex2.context.Person</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ch.hevs.design_patterns.lab11_ex2.state.Registered" target="ch.hevs.design_patterns.lab11_ex2.state.State">
+      <point x="-80.75" y="-160.5" />
+      <point x="80.75" y="296.0" />
+      <point x="765.8696428571427" y="296.0" />
+      <point x="-131.85000000000002" y="138.0" />
+    </edge>
+    <edge source="ch.hevs.design_patterns.lab11_ex2.state.WaitingToSpeak" target="ch.hevs.design_patterns.lab11_ex2.state.State">
+      <point x="-95.75" y="-160.5" />
+      <point x="438.75" y="316.0" />
+      <point x="824.4696428571428" y="316.0" />
+      <point x="-73.25" y="138.0" />
+    </edge>
+    <edge source="ch.hevs.design_patterns.lab11_ex2.state.Speaking" target="ch.hevs.design_patterns.lab11_ex2.state.State">
+      <point x="77.0" y="-160.5" />
+      <point x="977.0" y="336.0" />
+      <point x="912.3696428571429" y="336.0" />
+      <point x="14.650000000000091" y="138.0" />
+    </edge>
+    <edge source="ch.hevs.design_patterns.lab11_ex2.state.InMeeting" target="ch.hevs.design_patterns.lab11_ex2.state.State">
+      <point x="-80.0" y="-160.5" />
+      <point x="1154.0" y="326.0" />
+      <point x="941.6696428571429" y="326.0" />
+      <point x="43.950000000000045" y="138.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8107074569789675" x="616.5" y="513.0" />
+  <SelectedNodes>
+    <node>ch.hevs.design_patterns.lab11_ex2.state.Speaking</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
