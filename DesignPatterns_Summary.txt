@@ -1,0 +1,344 @@
+Titre
+______________________________
+info & Tips
+______________________________
+PROBLEMATIQUE - CAS - Exple
+
+
+STRUCTURE
+
+================================================================================
+
+1. Strategy Pattern
+______________________________
+- Family of algotithms
+- Encapsulates each one,
+- makes them interchangeable
+- Pour plusieurs variantes d'un ALGO dans un objet à dispo + switch ces algo lors de l'exécution
+- Si bcp de classes avec comme seule diff est la façon d'exécuter l'algo
+
+Permet de définir une famille d’algorithmes, 
+de les mettre dans des classes séparées et de rendre leurs objets interchangeables.
+
+TIPS : 
+  1. Dans la classe contexte, identifiez un algorithme qui varie souvent. Il peut s’agir d’un gros bloc conditionnel qui sélectionne une variante du même algorithme lors de l’exécution.
+
+  2. Déclarez l’interface stratégie commune à toutes les variantes de l’algorithme.
+
+  3. Extrayez tous les algorithmes un par un et mettez-les dans leurs propres classes. Elles doivent toutes implémenter l’interface stratégie.
+
+  4. Ajoutez un attribut pour garder une référence vers un objet stratégie dans la classe contexte. Créez un setter pour modifier le contenu de cet attribut. Le contexte ne doit manipuler l’objet stratégie qu’au travers de l’interface stratégie. Le contexte peut définir une interface qui laisse la stratégie accéder à ses données.
+
+  5. Les clients d’un contexte doivent l’associer avec une stratégie adaptée au comportement attendu.
+
+______________________________
+PROBLEMATIQUE - Cas : 
+-app de navigation voyageurs avec itinéraires avec PLUSIEURS moyens de LOCOMOTION
+			. voitures, rails, transports en commun...
+-multiples façons de trier
+			. BubbleSort, InsertSort...
+- Adventure games avec des personnages changeant d'attitude suivant l'arme
+	
+
+STRUCTURE :
+	- Context (class) : 
+			. a une ref vers strat concrète : private Strategy currentStrategy)
+			. méthode pour set cette strat : setCurrentStrat(Strategy strat) {... = ...}
+			. doSomeJob() (strategy.execute()
+
+	- <interface> Strategy :
+			- method : execute(...)
+
+	- les ConcreteStrategie (ConcreteStrategie A, ConcreteStrategie B, ConcreteStrategie C...)
+			- portent (@Override) leur .execute(..) propre
+
+
+==================================================================================
+
+2. Observer Pattern
+______________________________
+INFOS & TIPS
+Permet de mettre en place un mécanisme de souscription 
+pour envoyer des notifications à plusieurs objets, 
+au sujet d’événements concernant les objets qu’ils observent.
+______________________________
+PROBLEMATIQUE - CAS - Exple
+
+- Youtube...
+- Magasin avec clients qui veulent être notifiés quand tel produit, telle marque, blablabla
+- hôpital monitoring des patients
+
+
+STRUCTURE
+	- <interface> Subject (ou Publisher) : 
+			. void notify()
+			. Attach(Observer) / Add(Observer)
+			. Detach(...) / Remove(..)
+
+	- <interface> Observer (ou Souscribers)
+			. Update()
+
+	- ConcreteObserver 
+				. ConcreteSubject concreteSubject
+				. Constuctor(ConcreteSubject cs) { this.. = cs;}
+				. @Override Update() {...}
+				
+	- ConcreteSubject
+			. private LIST<Observer> obs
+			. int STATE = 0;
+			. all @Override : register, remove, notify
+			. getState()
+
+
+
+================================================================================
+
+3. Decorator
+______________________________
+INFOS & TIPS
+Permet d’affecter dynamiquement de nouveaux comportements 
+à des objets en les plaçant dans des emballeurs 
+qui implémentent ces comportements.
+______________________________
+PROBLEMATIQUE - CAS - Exple
+- Notif par SMS, FB, ... + Par SMS & FB...
+- Café ou Thé avec condiments
+- CarFeatures
+
+STRUCTURE - des decorators & des components
+
+	- <interface> Component { void operation();}
+	- (multiple) ConcreteComponent implements Component 
+		=> @Override operation() {concrete component job}
+
+	- <abstract class> Decorator implements Component { 
+			- attribut : Component comp => constructor Decorator(Component comp) {this... = comp}
+			- méthodes : void operation() {comp.operation();}
+	- (multiple) ConcreteDecorator extends Decorator 
+			- Constructor : ConcreteDeco_A (Component comp) {super(comp); }
+			- operation() {
+						super.operation();
+						...do its job ; }
+
+
+================================================================================
+
+4. Factory Method
+______________________________
+INFOS & TIPS
+Définit une interface pour la création d’objets dans une classe mère, 
+mais délègue aux sous-classes le choix des types d’objets à créer.
+
+______________________________
+PROBLEMATIQUE - CAS - Exple
+- constructeur de voitures suivant modèle (Coupe, Miniva, Pickup)
+- application de gestion de logistique : d'abord que transport par camion, puis ajout maritime,...
+
+STRUCTURE - creators & products
+	
+	- <interface> Product 
+			- doStuff() (getters selon attributs des produits : getName(), getColor()... )
+	- (multiple) ConcreteProduct implements Product :
+			- attribut : String name, String color...
+			=> Constructor : ConcreteProduct(String color) {this.color = color ; this.name = "sonNom";}
+			- return new ConcreteProduct()
+	
+	- <abstract class> Creator
+			- abstract public Product factoryMethod() -> oblige le concrete coder le corps de la méthode
+			- someOperation()  Product prod = factoryMethod() 
+			- createProduct() : Product 
+	- ConcreteCreator implements Product : attribut + constructeur +...
+			- someOperation()
+			- createProduct() : Product
+
+================================================================================
+
+5. Abstract Factory
+______________________________
+INFOS & TIPS
+Permet de créer des familles d’objets apparentés sans préciser leur classe concrète.
+
+Bien que les fabriques concrètes instancient des produits concrets, 
+leurs méthodes de création ont une valeur de retour correspondant aux produits abstraits. 
+Le code client qui sollicite une fabrique est ainsi isolé de la variante du produit obtenu. 
+Le client peut travailler avec n’importe quelle variante de fabrique ou produit, tant qu’il interagit avec les interfaces abstraites.
+______________________________
+PROBLEMATIQUE - CAS - Exple
+- magasin de meubles : chaise, Sofa, table basse && Art déco, Victorien, Moderne
+
+
+STRUCTURE - Products & Factory
+
+	- <interface> AbstractProduct (1 interface pour chaque produit ! chaise, table, sofa)
+		-> (multiple) ConcreteProduit
+Les Produits Concrets sont des implémentations des produits abstraits groupés par variantes.
+Chaque produit abstrait (chaise/sofa) doit être implémenté dans toutes les variantes (victorien/moderne).
+
+	- <interface> AbstractFactory (1 seule ? ) L’interface Fabrique Abstraite déclare un ensemble de méthodes pour créer chacun des produits abstraits.
+		-> (multiple) ConcreteFactory
+Les Fabriques Concrètes implémentent les opérations de création d’objets de la fabrique abstraite. 
+Chaque fabrique concrète correspond à une variante spécifique de produits et ne crée que ces variantes.
+
+================================================================================
+
+6. Singleton
+______________________________
+INFOS & TIPS
+Permet de garantir que l’instance d’une classe n’existe qu’en un seul exemplaire, 
+tout en fournissant un point d’accès global à cette instance.
+
+BasicSingleton : "a basic and NOT thread safe Singleton."
+EagerSingleton : thread safe, no overhead of creation at runtime
+
+Syncrhonization Singleton - SynchSingleton :
+"I'm a synchronized Singleton, called 'Eager'. I'm thread safe Singleton but need a lot of time each time I'm called."
+
+DoubleCheckLockingSingleton (use volatile*)
+*Volatile : "Volatile" is used on variables that may be modified simultaneously by other threads.
+    This warns the compiler to fetch them fresh each time, rather than caching them in registers !
+Volatile est utilisé sur des variables pouvant être modifiées simultanément par d'autres threads.
+Cela avertit le compilateur de les récupérer à chaque fois, plutôt que de les mettre en cache dans des registres ! 
+
+
+______________________________
+PROBLEMATIQUE - CAS - Exple
+
+
+STRUCTURE
+
+================================================================================
+
+7. Command
+______________________________
+INFOS & TIPS
+Prend une action à effectuer et
+la transforme en un objet autonome qui contient tous les détails de cette action.
+Cette transformation permet :
+		de paramétrer des méthodes avec différentes actions, 
+		planifier leur exécution, 
+		les mettre dans une file d’attente ou 
+		d’annuler des opérations effectuées.
+______________________________
+PROBLEMATIQUE - CAS - Exple
+- télécommande
+- menus
+
+
+STRUCTURE
+
+================================================================================
+
+8. Adapter And Façade
+______________________________
+INFOS & TIPS
+Adapter : Permet de faire collaborer des objets ayant des interfaces normalement incompatibles.
+
+Façade : Procure une interface qui offre un accès simplifié à une librairie, 
+un framework ou à n’importe quel ensemble complexe de classes.
+______________________________
+PROBLEMATIQUE - CAS - Exple
+- (Adapter de voitures sur rail)...
+- XML vers JSON
+- Adaptateurs de prises
+
+STRUCTURE <interface>Client [method(data)] --> <interface>Targer <<<<<< Adatper [resquest()] --> Adaptee[specificRequest]
+
+	- Client 
+Le Client est une classe qui contient la logique métier du programme.
+
+	- <interface>Client 
+L’Interface Client décrit un protocole que les autres classes doivent implémenter 
+afin de pouvoir collaborer avec le code client.
+
+	- Adapter
+L’Adaptateur est une classe qui peut interagir à la fois avec le client et le service : 
+il implémente l’interface client et encapsule l’objet service. 
+L’adaptateur reçoit des appels du client via l’interface et les convertit en appels à l’objet du service encapsulé, dans un format qu’il peut gérer.
+
+	- Service (Adapteeeee : Service) +method(data)
+Le Service représente une classe que l’on veut utiliser (souvent une application externe ou héritée).
+Le client ne peut pas l’utiliser directement, car son interface n’est pas compatible.
+
+================================================================================
+
+9. Template Method (patron de conception)
+______________________________
+INFOS & TIPS
+Permet de mettre le squelette d’un algorithme dans la classe mère, mais 
+laisse les sous-classes redéfinir certaines étapes de l’algorithme sans changer sa structure
+______________________________
+PROBLEMATIQUE - CAS - Exple
+- Coffee & Tea : similar method. 
+
+STRUCTURE AbstractClass <<<< ConcreteClass
+	- AbstractClass with primitive op (primOp1(), primOp2()...)
+
+	- ConcreteClass (primOp1...)
+
+================================================================================
+
+10. Composite
+______________________________
+INFOS & TIPS
+Permet d'agencer les objets dans des arborescences 
+afin de pouvoir traiter celles-ci (l'arborescence) comme des objets individuels.
+______________________________
+PROBLEMATIQUE - CAS - Exple
+
+
+STRUCTURE
+
+================================================================================
+
+11. State
+______________________________
+INFOS & TIPS
+Modifie le comportement d’un objet lorsque son état interne change. 
+L’objet donne l’impression qu’il change de classe.
+______________________________
+PROBLEMATIQUE - CAS - Exple
+
+
+STRUCTURE
+
+================================================================================
+
+12. Proxy
+______________________________
+INFOS & TIPS
+Permet de fournir un substitut d’un objet. 
+Une procuration donne le contrôle sur l’objet original, 
+vous permettant d’effectuer des manipulations avant ou après que la demande ne lui parvienne.
+______________________________
+PROBLEMATIQUE - CAS - Exple
+
+
+STRUCTURE
+
+================================================================================
+
+13. Builder
+______________________________
+INFOS & TIPS
+Permet de construire des objets complexes étape par étape. 
+Ce patron permet de construire différentes variations ou représentations d’un objet 
+en utilisant le même code de construction.
+______________________________
+PROBLEMATIQUE - CAS - Exple
+
+
+STRUCTURE
+
+================================================================================
+
+
+
+
+
+
+
+
+
+
+
+ 
