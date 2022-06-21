@@ -1,4 +1,6 @@
-package ExampleProxy_Navigation;
+package ExampleProxy_Navigation.subject;
+
+import ExampleProxy_Navigation.client.User;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

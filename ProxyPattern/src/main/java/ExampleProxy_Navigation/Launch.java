@@ -1,8 +1,11 @@
 package ExampleProxy_Navigation;
 
+import ExampleProxy_Navigation.client.User;
+import ExampleProxy_Navigation.proxy.ProxyNavigation;
+import ExampleProxy_Navigation.subject.Navigation;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.nio.file.attribute.UserPrincipal;
 
 public class Launch {
     public static void main(String[] args) throws IOException, URISyntaxException {

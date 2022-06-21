@@ -4,5 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RegistrationService {
-    static private List<User> registerdUsers = new ArrayList<>();
+    private static List<User> registeredUsers = new ArrayList<User>();
+
+    public static void register(User user) {
+        registeredUsers.add(user);
+        System.out.println(user.getName() + " is registered \n");
+    }
+
+    public static boolean isRegistered(User user) {
+        return registeredUsers.contains(user);
+    }
+
 }

@@ -1,8 +1,9 @@
 package Car_Ex1;
 
-import Car_Ex1.CarBuilder;
+public class SportCar implements CarBuilder {
 
-public class SportCar extends CarBuilder {
+    private final Car car = new Car("SPORTS");
+
     @Override
     public void buildPower() {
         System.out.println("Build High Power");
@@ -37,5 +38,10 @@ public class SportCar extends CarBuilder {
     public void buildFuelType() {
         System.out.println("Build Unlead Petrol");
         car.setFuelType("Unlead Petrol");
+    }
+
+    @Override
+    public Car getCar() {
+        return car;
     }
 }

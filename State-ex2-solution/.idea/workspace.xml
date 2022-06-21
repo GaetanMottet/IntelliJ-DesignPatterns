@@ -1,20 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57f0c8e8-919f-4164-af25-2ba6cd9dca4a" name="Default" comment="" />
+    <list default="true" id="57f0c8e8-919f-4164-af25-2ba6cd9dca4a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/game_TeamOfPlayers/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/game_TeamOfPlayers/component/Playable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/game_TeamOfPlayers/component/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/game_TeamOfPlayers/composite/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/researchAlgorithms_DFS_BFS/TestTraversalAlgoritms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/researchAlgorithms_DFS_BFS/algorithms/BFSSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/researchAlgorithms_DFS_BFS/algorithms/DFSSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/researchAlgorithms_DFS_BFS/algorithms/TraversalAlgoritm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/researchAlgorithms_DFS_BFS/component/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/researchAlgorithms_DFS_BFS/composite/Composite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/researchAlgorithms_DFS_BFS/leaf/Leaf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CompositePattern/src/main/java/Composite.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositePattern/src/main/java/Composite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns_Summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns_Summary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/context/CoffeeMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/context/CoffeeMachine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateIdle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateIdle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateInsertingCoins.class" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateInsertingCoins.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateMakeCoffee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateMakeCoffee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateServiceNeeded.class" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateServiceNeeded.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateUserChoose.class" beforeDir="false" afterPath="$PROJECT_DIR$/../State-ex1-solution/out/production/lab11-state-ex1-solution/ch/hevs/design_patterns/lab11_ex1/state/StateUserChoose.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/Discussion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/Discussion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/context/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/context/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/InMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/InMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/Registered.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/Registered.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/Speaking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/Speaking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/WaitingToSpeak.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab11-state-ex2-solution/ch/hevs/design_patterns/lab11_ex2/state/WaitingToSpeak.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1RxYP4BvmQEd7cZnhDvwbIICpuq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="/Applications/adt-bundle-mac-x86_64-20140702/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProxyPattern" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -27,9 +71,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <configuration name="Discussion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ch.hevs.design_patterns.lab11_ex2.Discussion" />
@@ -67,6 +108,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Discussion" />
@@ -74,13 +124,17 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1655845912338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655845912338</updated>
+      <workItem from="1655845913429" duration="243000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="768" y="282" key="SettingsEditor" timestamp="1599641971923">
-      <screen x="0" y="23" width="2560" height="1355" />
-    </state>
-    <state x="768" y="282" key="SettingsEditor/2560.279.1440.877/0.23.2560.1355@0.23.2560.1355" timestamp="1599641971923" />
   </component>
 </project>

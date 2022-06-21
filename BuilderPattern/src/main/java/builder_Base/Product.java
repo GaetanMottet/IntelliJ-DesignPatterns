@@ -1,3 +1,5 @@
+package builder_Base;
+
 public class Product {
 
     private String PartA;

@@ -266,7 +266,7 @@ Le client ne peut pas l’utiliser directement, car son interface n’est pas co
 
 ================================================================================
 
-9. Template Method (patron de conception)
+9. Template Method (patron de conception) - recette/dinner restaurant
 ______________________________
 INFOS & TIPS
 Permet de mettre le squelette d’un algorithme dans la classe mère, mais 
@@ -274,6 +274,7 @@ laisse les sous-classes redéfinir certaines étapes de l’algorithme sans chan
 ______________________________
 PROBLEMATIQUE - CAS - Exple
 - Coffee & Tea : similar method. 
+- Dinner at restaurant.
 
 STRUCTURE AbstractClass <<<< ConcreteClass
 	- AbstractClass with primitive op (primOp1(), primOp2()...)
@@ -285,13 +286,14 @@ STRUCTURE AbstractClass <<<< ConcreteClass
 
 ================================================================================
 
-10. Composite
+10. Composite (Uniquement si structure ~= arborescence )
 ______________________________
 INFOS & TIPS
 Permet d'agencer les objets dans des arborescences 
-afin de pouvoir traiter celles-ci (l'arborescence) comme des objets individuels.
+afin de pouvoir traiter celles-ci (les arborescences) comme des objets individuels.
 ______________________________
 PROBLEMATIQUE - CAS - Exple
+objets dans boîte
 
 
 STRUCTURE
@@ -305,9 +307,15 @@ Modifie le comportement d’un objet lorsque son état interne change.
 L’objet donne l’impression qu’il change de classe.
 ______________________________
 PROBLEMATIQUE - CAS - Exple
+Un document qui passe de : Brouillon -> En Modération -> Publié
 
 
 STRUCTURE
+
+- Une classe par état. Chacune de ces classes contient les comportements liés aux états
+- L'objet original, nommé Contexte, stocke une référence vers un des objets "état" qui représente son état actuel.
+  L'objet original a autant d'attributs que d'états possible et
+	son constructeur instancie tous les états possibles ainsi que les métodes "get" & "set" pour chaque état.
 
 ================================================================================
 
@@ -322,6 +330,14 @@ PROBLEMATIQUE - CAS - Exple
 
 
 STRUCTURE
+1. Une interface (ServiceInterface) qui va permettre à la procuraton de 'copier'/'se déguiser' en objet du service
+2. Le Service : classe qui fournit la logique métier (dont on veut se servir)
+3. La Procuration (Proxy) : classe avec un attribut qui pointe vers un objet Service(pt2). 
+	Généralement, la procuration gère le cycle de vie de l'objet service et envoie la demande à l'objet service
+	lorsqu'elle a fait tous les traitements
+4. Le Client, implémente ServiceInterface afin de travailler avec les services et les procurations.
+
+Client -> <interface> ServiceInterface (opération())  <- Service & Proxy (attribut Proxy(Service s) & operation())
 
 ================================================================================
 

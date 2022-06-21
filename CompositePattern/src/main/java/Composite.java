@@ -1,5 +1,5 @@
 /*
-(alias Conteneur) est un élément domposé de sous-éléments (feuilles ou autres conteneurs).
+(alias Conteneur) est un élément composé de sous-éléments (feuilles ou autres conteneurs).
 Un conteneur ne connaît pas les classes de ses enfants.
 Il passe par l'interface composant pour intéragir avec ses sous-éléments
 

@@ -1,3 +1,5 @@
+package builder_Base;
+
 public abstract class Builder {
     // CAN BE AN INTERFACE ! (in this case, no need of argument below...)
 

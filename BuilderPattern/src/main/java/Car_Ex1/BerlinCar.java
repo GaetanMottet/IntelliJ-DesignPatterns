@@ -1,6 +1,9 @@
 package Car_Ex1;
 
-public class BerlinCar extends CarBuilder{
+public class BerlinCar implements CarBuilder{
+
+    private final Car car = new Car("BERLIN") ;
+
     @Override
     public void buildPower() {
         System.out.println("Build Medium Power");
@@ -36,4 +39,11 @@ public class BerlinCar extends CarBuilder{
         System.out.println("Build Unlead Petrol");
         car.setFuelType("Unlead Petrol");
     }
+
+    @Override
+    public Car getCar() {
+        return car;
+    }
+
+
 }

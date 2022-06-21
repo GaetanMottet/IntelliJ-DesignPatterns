@@ -1,17 +1,14 @@
 package Car_Ex1;
 
-public abstract class CarBuilder {
-    protected Car car;
+public interface CarBuilder {
 
-    public void creatNewCar(String carType) {this.car = new Car(carType);}
+    public void buildPower();
+    public void buildEngine();
+    public void buildBreaks();
+    public void buildSeats();
+    public void buildWindows();
+    public void buildFuelType();
 
-    public abstract void buildPower();
-    public abstract void buildEngine();
-    public abstract void buildBreaks();
-    public abstract void buildSeats();
-    public abstract void buildWindows();
-    public abstract void buildFuelType();
-
-    public Car getResult() {return car;}
+    public Car getCar();
 
 }

@@ -1,4 +1,8 @@
-package ExampleProxy_Navigation;
+package ExampleProxy_Navigation.proxy;
+
+import ExampleProxy_Navigation.client.User;
+import ExampleProxy_Navigation.real_subject.RealNavigation;
+import ExampleProxy_Navigation.subject.Navigation;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -7,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ProxyNavigation implements Navigation{
+public class ProxyNavigation implements Navigation {
 //    @uml.property name = "realNavigation"
 
     private RealNavigation realNavigation;
@@ -19,7 +23,7 @@ public class ProxyNavigation implements Navigation{
         boolean access = controlURL(url);
 
         if(access || user.isAdmin()) {
-            this.realNavigation = new RealNavigation();
+            realNavigation = new RealNavigation();
             realNavigation.navigate(user, url);
         }
         else {

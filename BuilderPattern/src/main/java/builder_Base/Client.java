@@ -1,3 +1,7 @@
+package builder_Base;
+
+import builder_Base.Builder;
+
 public class Client {
     public static void main(String[] args) {
         Builder builder = new ConcreteBuilder();

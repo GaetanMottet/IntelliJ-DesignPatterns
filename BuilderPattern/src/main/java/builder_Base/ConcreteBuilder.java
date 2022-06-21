@@ -1,4 +1,11 @@
-public class ConcreteBuilder extends Builder{
+package builder_Base;
+
+import builder_Base.Builder;
+
+public class ConcreteBuilder extends Builder {
+
+    private Product product;
+
     @Override
     public void buildPartA() {
         System.out.println("Build Part A");

@@ -1,4 +1,4 @@
-package ExampleProxy_Navigation;
+package ExampleProxy_Navigation.client;
 
 public class User {
     private boolean isAdmin;
