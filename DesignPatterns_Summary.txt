@@ -144,12 +144,12 @@ Ces classes devront adapter ladite méthode à leurs besoins propres.
 	- (multiple) ConcreteProduct implements Product :
 			- attribut : String name, String color...
 			=> Constructor : ConcreteProduct(String color) {this.color = color ; this.name = "sonNom";}
-			- return new ConcreteProduct()
+			@Override les getters (ou autres méthodes) de l'interface : getName() {return this.name}...
 
 La classe Creator (peut être abstraite) va créer (retourner) les nouveaux 'produits' 
 par l'intermédiaire de la classe ConcreteCreator (extends Creator) correspondant
 	- <abstract class> Creator
-			- abstract public Product factoryMethod() -> oblige le concrete coder le corps de la méthode
+			- abstract public Product factoryMethod() -> oblige le concrete à coder le corps de la méthode
 			- someOperation()  Product prod = factoryMethod() 
 			- createProduct() : Product 
 	- ConcreteCreator extends Creator : attribut + constructeur +...
@@ -158,7 +158,7 @@ par l'intermédiaire de la classe ConcreteCreator (extends Creator) correspondan
 
 ================================================================================
 
-5. Abstract Factory
+5. Abstract Factory (magasin de meubles)
 ______________________________
 INFOS & TIPS
 Permet de créer des familles d’objets apparentés sans préciser leur classe concrète.
@@ -246,7 +246,7 @@ PROBLEMATIQUE - CAS - Exple
 - XML vers JSON
 - Adaptateurs de prises
 
-STRUCTURE <interface>Client [method(data)] --> <interface>Targer <<<<<< Adatper [resquest()] --> Adaptee[specificRequest]
+STRUCTURE <interface>Client [method(data)] --> <interface>Target <<<<<< Adatper [resquest()] --> Adaptee[specificRequest]
 
 	- Client 
 Le Client est une classe qui contient la logique métier du programme.
@@ -277,8 +277,11 @@ PROBLEMATIQUE - CAS - Exple
 
 STRUCTURE AbstractClass <<<< ConcreteClass
 	- AbstractClass with primitive op (primOp1(), primOp2()...)
+		La classe abstraite déclare les méthodes = définit les étapes de l'algorithme (recette)
+		Les étapes peuvent être déclarées abstraites ou posséder une implémentation par défaut
 
 	- ConcreteClass (primOp1...)
+		Les classes concrètes peuvent redéfinir toutes les étapes mais pas le déroulement général
 
 ================================================================================
 

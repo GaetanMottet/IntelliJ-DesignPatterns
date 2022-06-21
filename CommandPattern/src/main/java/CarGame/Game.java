@@ -1,6 +1,6 @@
 package CarGame;
 
-public class Game { //would be the invoker
+public class Game { //the INVOKER
     private Command[] myCommands = new Command[4] ;
     private Command key ;
 
