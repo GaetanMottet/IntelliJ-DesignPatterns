@@ -3,6 +3,12 @@ package CarGame;
 public class MobilePhone {
     public static void main(String[] args) {
         Game game = new Game();
+        Car car = new Car();
+
+        game.setCommand(0, new ForwardCommand(car));
+        game.setCommand(1, new BackwardCommand(car));
+        game.setCommand(2, new RightCommand(car));
+        game.setCommand(3, new LeftCommand(car));
 
         // TODO SETUP
 

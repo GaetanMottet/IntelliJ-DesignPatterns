@@ -1,13 +1,19 @@
 package CarGame;
 
 public class BackwardCommand implements Command{
+
+    private Car myCar;
+
+    public BackwardCommand(Car car){
+        this.myCar = car;
+    }
     @Override
-    public void puschKey(int key) {
-        System.out.println("My car is backing up");
+    public void puschKey() {
+        myCar.backward();
     }
 
     @Override
     public void undo() {
-        System.out.println("My car stops to backing up");
+        myCar.forward();
     }
 }

@@ -1,13 +1,20 @@
 package CarGame;
 
 public class RightCommand implements Command{
+
+    private Car myCar;
+
+    public RightCommand(Car car){
+        this.myCar = car;
+    }
+
     @Override
-    public void puschKey(int key) {
-        System.out.println("My car turns right");
+    public void puschKey() {
+        myCar.right();
     }
 
     @Override
     public void undo() {
-        System.out.println("My car stops turning right");
+        myCar.left();
     }
 }

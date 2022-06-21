@@ -28,7 +28,7 @@ public class MainTest {
 
         System.out.println("========== action but not comedy ==========");
         for(Movie m : myMovies) {
-            boolean actionAndNOTcomedy = action.and(comedy.not(comedy)).isSatisfiedBy(m);
+            boolean actionAndNOTcomedy = action.and(action.not(comedy)).isSatisfiedBy(m);
             System.out.println(m.getTitle() + " : " +actionAndNOTcomedy);
         }
         System.out.println();

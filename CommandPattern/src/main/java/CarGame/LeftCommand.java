@@ -3,14 +3,19 @@ package CarGame;
 import javax.sound.midi.Receiver;
 
 public class LeftCommand implements Command{
-    private Receiver receiver;
+    private Car myCar;
+
+    public LeftCommand(Car car){
+        this.myCar = car;
+    }
+
     @Override
-    public void puschKey(int key) {
-        System.out.println("My car turns left");
+    public void puschKey() {
+        myCar.left();
     }
 
     @Override
     public void undo() {
-        System.out.println("My car stops turning left");
+        myCar.right();
     }
 }

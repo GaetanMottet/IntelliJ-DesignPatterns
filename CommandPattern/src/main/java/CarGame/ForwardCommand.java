@@ -1,13 +1,20 @@
 package CarGame;
 
 public class ForwardCommand implements Command{
+
+    private Car myCar;
+
+    public ForwardCommand(Car car) {
+        this.myCar = car;
+    }
+
     @Override
-    public void puschKey(int key) {
-        System.out.println("My car is moving forward");
+    public void puschKey() {
+        myCar.forward();
     }
 
     @Override
     public void undo() {
-        System.out.println("My car stops moving forward");
+        myCar.backward();
     }
 }

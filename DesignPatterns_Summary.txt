@@ -129,6 +129,7 @@ INFOS & TIPS
 Définit une interface pour la création d’objets dans une classe mère, 
 mais délègue aux sous-classes le choix des types d’objets à créer.
 
+
 ______________________________
 PROBLEMATIQUE - CAS - Exple
 - constructeur de voitures suivant modèle (Coupe, Miniva, Pickup)
@@ -136,20 +137,24 @@ PROBLEMATIQUE - CAS - Exple
 
 STRUCTURE - creators & products
 	
+Une interface "Product" contient une méthode commune aux classes concrètes qui l'implémenteront.
+Ces classes devront adapter ladite méthode à leurs besoins propres.
 	- <interface> Product 
 			- doStuff() (getters selon attributs des produits : getName(), getColor()... )
 	- (multiple) ConcreteProduct implements Product :
 			- attribut : String name, String color...
 			=> Constructor : ConcreteProduct(String color) {this.color = color ; this.name = "sonNom";}
 			- return new ConcreteProduct()
-	
+
+La classe Creator (peut être abstraite) va créer (retourner) les nouveaux 'produits' 
+par l'intermédiaire de la classe ConcreteCreator (extends Creator) correspondant
 	- <abstract class> Creator
 			- abstract public Product factoryMethod() -> oblige le concrete coder le corps de la méthode
 			- someOperation()  Product prod = factoryMethod() 
 			- createProduct() : Product 
-	- ConcreteCreator implements Product : attribut + constructeur +...
+	- ConcreteCreator extends Creator : attribut + constructeur +...
 			- someOperation()
-			- createProduct() : Product
+			- createProduct() : return new ConcreteProduct
 
 ================================================================================
 
