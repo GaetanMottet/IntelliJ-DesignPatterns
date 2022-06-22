@@ -1,13 +1,8 @@
 package CarFeatures.Components;
 
-public class CarBerlin extends Car {
+public class CarBerlin extends Car{
     public CarBerlin() {
-    }
-
-
-    @Override
-    public String getDescription() {
-        return "Berlin";
+        this.description = "Berlin";
     }
 
     @Override

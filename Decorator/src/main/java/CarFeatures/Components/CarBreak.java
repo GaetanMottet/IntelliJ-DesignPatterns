@@ -1,9 +1,9 @@
 package CarFeatures.Components;
 
 public class CarBreak extends Car {
-    @Override
-    public String getDescription() {
-        return "Break";
+
+    public CarBreak() {
+        this.description = "Break";
     }
 
     @Override

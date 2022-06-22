@@ -1,25 +1,27 @@
 package CarFeatures.Decorators;
 
-import CarFeatures.Components.Car;
-import CarFeatures.Decorators.Decorator;
+import CarFeatures.Components.*;
 
 public class EngineDecorator extends Decorator {
+
+    private Car car = null;
     public EngineDecorator(Car myCar) {
         super(myCar);
+        this.car = myCar;
     }
 
     @Override
     public String getDescription() {
-        return myCar.getDescription() + " +Engine";
+        return this.car.getDescription() + " +Engine";
     }
 
     @Override
     public double getCost() {
-        return myCar.getCost() + 2500;
+        return this.car.getCost() + 2500;
     }
 
     @Override
     public int getSecurityLevel() {
-        return myCar.getSecurityLevel() +1;
+        return this.car.getSecurityLevel() +1;
     }
 }

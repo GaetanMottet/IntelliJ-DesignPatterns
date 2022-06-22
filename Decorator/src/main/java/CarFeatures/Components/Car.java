@@ -1,7 +1,12 @@
 package CarFeatures.Components;
 
 public abstract class Car{
-    public abstract String getDescription();
+
+    protected String description = "";
+
+    public String getDescription() {
+        return this.description;
+    };
     public abstract double getCost();
     public abstract int getSecurityLevel();
 

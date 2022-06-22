@@ -1,9 +1,6 @@
 package CarFeatures;
 
-import CarFeatures.Components.Car;
-import CarFeatures.Components.CarBerlin;
-import CarFeatures.Components.CarBreak;
-import CarFeatures.Components.CarSport;
+import CarFeatures.Components.*;
 import CarFeatures.Decorators.*;
 
 public class CarDecoratorLauncher {

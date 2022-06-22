@@ -1,6 +1,6 @@
 package CarFeatures.Decorators;
 
-import CarFeatures.Components.Car;
+import CarFeatures.Components.*;
 
 public abstract class Decorator extends Car {
     Car myCar ;

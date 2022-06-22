@@ -1,3 +1,7 @@
+package Decorator_Base;
+
+import Decorator_Base.Component;
+
 public class ConcreteDecoratorA extends Decorator {
 
     public ConcreteDecoratorA(Component component) {

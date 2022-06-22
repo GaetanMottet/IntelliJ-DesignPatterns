@@ -10,7 +10,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../oldExams/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/.idea/jarRepositories.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../oldExams/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../oldExams/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/constructingHouse/ArchitectOffice.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/constructingHouse/company/Carpentry.java" afterDir="false" />
@@ -22,7 +25,63 @@
       <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/constructingHouse/heating/EcologicalHeating.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/constructingHouse/heating/HeatingCompany.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/constructingHouse/heating/StandardHeating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns_Summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns_Summary.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Command/CmdEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Command/CmdMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Command/CmdNo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Command/CmdSetWinner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Context/ValaisGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Invoker/MenuInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Strategy/StrategyGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Strategy/StrategyNax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Strategy/StrategyNendaz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/game/Strategy/StrategySimplon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/NotificationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/composite/Individual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/composite/Recepient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/composite/RecepientGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/decorator/CoreNotifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/decorator/Notifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/decorator/NotifierDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/decorator/SMSDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/decorator/TelegramDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/messageNotificationSystem/decorator/WhatsAppDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/Cabin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/FlightTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/FullController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/LandingCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/Pilot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/Plane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/Proxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/StartAutoPilotCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/plane/TakeoffCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/ProductionLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/SolarApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/SolarInfrastructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/StateCompute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/StateOff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/StateOn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oldExams/src/main/java/solarPanels/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/CarDecoratorLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/CarDecoratorLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Components/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Components/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Components/CarBerlin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Components/CarBerlin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Components/CarBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Components/CarBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Components/CarSport.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Components/CarSport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Decorators/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Decorators/Decorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Decorators/EngineDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/CarFeatures/Decorators/EngineDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/Decorator_Base/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/ConcreteComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/Decorator_Base/ConcreteComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/ConcreteDecoratorA.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/Decorator_Base/ConcreteDecoratorA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/ConcreteDecoratorB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/Decorator_Base/ConcreteDecoratorB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/Decorator_Base/Decorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Decorator/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Decorator/src/main/java/Decorator_Base/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655882676392</updated>
-      <workItem from="1655882677517" duration="5118000" />
+      <workItem from="1655882677517" duration="5359000" />
     </task>
     <task id="LOCAL-00001" summary="Pattern of patterns 1">
       <created>1655884478349</created>

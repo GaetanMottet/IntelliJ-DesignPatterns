@@ -1,9 +1,8 @@
 package CarFeatures.Components;
 
 public class CarSport extends Car {
-    @Override
-    public String getDescription() {
-        return "Sport";
+    public CarSport() {
+        this.description = "Sport";
     }
 
     @Override
