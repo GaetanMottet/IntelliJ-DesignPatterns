@@ -5,22 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e52d2ec4-9e81-4a6d-8acd-664a5c875906" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ObserverPattern/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/Adapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/CapselMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/Machine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/MachineGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/Nespresso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/OldMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/observer/Engineer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/subject/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignPatterns_Summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns_Summary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/ConcreteObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/ConcreteObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/ConcreteSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/ConcreteSubject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/TestSalad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/decorator/Olives.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/decorator/Paprika.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/decorator/SaladDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/factory/ChefSpecialIngredientFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/factory/ClassicGreekSaladIngredientFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/factory/SaladIngredientFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/BigCucumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/CheeseIngredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/CherryTomato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/ChineseLettuce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/CucumberIngredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/Feta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/IcebergSalad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/SaladIngredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/ingredients/TomatoIngredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/salad/GreekSalad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/greekSalad_AbstFact_Decorator/salad/Salad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/target/classes/ConcreteObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/target/classes/ConcreteSubject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/target/classes/DigitalAndAnalogClocks/ClockTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/target/classes/DigitalAndAnalogClocks/ClockTimer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/target/classes/DigitalAndAnalogClocks/MyTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/target/classes/DigitalAndAnalogClocks/MyTimer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/target/classes/Observer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/target/classes/PatientMonitoringSystem/PatientMonitoring.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/target/classes/PatientMonitoringSystem/PatientMonitoring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/target/classes/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/target/classes/Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +68,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestSalad">
     <configuration name="Nespresso" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coffeeMachine_Exercice.Nespresso" />
       <module name="PatternOfPatterns" />
@@ -70,8 +82,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSalad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="greekSalad_AbstFact_Decorator.TestSalad" />
+      <module name="PatternOfPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="greekSalad_AbstFact_Decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestSalad" />
         <item itemvalue="Application.Nespresso" />
       </list>
     </recent_temporary>
@@ -84,12 +110,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655882676392</updated>
-      <workItem from="1655882677517" duration="1689000" />
+      <workItem from="1655882677517" duration="3934000" />
     </task>
+    <task id="LOCAL-00001" summary="Pattern of patterns 1">
+      <created>1655884478349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655884478349</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pattern of patterns 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pattern of patterns 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
