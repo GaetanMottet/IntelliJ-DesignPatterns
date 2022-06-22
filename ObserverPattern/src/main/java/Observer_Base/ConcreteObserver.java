@@ -1,3 +1,5 @@
+package Observer_Base;
+
 public class ConcreteObserver implements Observer{
     ConcreteSubject concreteSubject;
 
@@ -8,6 +10,6 @@ public class ConcreteObserver implements Observer{
 
     @Override
     public void update() {
-        System.out.println("Observer was notified : subject has state: " +this.concreteSubject.getState());
+        System.out.println("Observer_Base.Observer was notified : subject has state: " +this.concreteSubject.getState());
     }
 }

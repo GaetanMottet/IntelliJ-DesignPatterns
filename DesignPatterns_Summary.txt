@@ -349,7 +349,8 @@ Ce patron permet de construire différentes variations ou représentations d’u
 en utilisant le même code de construction.
 ______________________________
 PROBLEMATIQUE - CAS - Exple
-
+La maison construite avec des murs (buildWalls()), des portes (buildDoors()), des fenêtre (buildWindows()),...
++getResult() return House;
 
 STRUCTURE
 

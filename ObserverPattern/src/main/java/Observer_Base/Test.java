@@ -1,3 +1,7 @@
+package Observer_Base;
+
+import Observer_Base.ConcreteObserver;
+
 public class Test {
     public static void main(String[] args) {
         ConcreteSubject subject = new ConcreteSubject();

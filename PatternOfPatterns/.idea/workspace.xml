@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c6312c0-9a9d-49d9-b620-85657c556f4f" name="Changes" comment="" />
+    <list default="true" id="e52d2ec4-9e81-4a6d-8acd-664a5c875906" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ObserverPattern/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/CapselMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/Machine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/MachineGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/Nespresso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/OldMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/observer/Engineer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/subject/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DesignPatterns_Summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignPatterns_Summary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/ConcreteObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/ConcreteObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/ConcreteSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/ConcreteSubject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ObserverPattern/src/main/java/Observer_Base/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +35,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="26k8A9y30mXwKE0lXzLIdgvzcjK" />
+  <component name="ProjectId" id="2AvGVB3U3aWJWfV9xwmDfvRLHBn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,40 +51,55 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BuilderPattern" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client" />
-      <module name="BuilderPattern" />
+    <configuration name="Nespresso" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coffeeMachine_Exercice.Nespresso" />
+      <module name="PatternOfPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coffeeMachine_Exercice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Nespresso" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4c6312c0-9a9d-49d9-b620-85657c556f4f" name="Changes" comment="" />
-      <created>1647956079816</created>
+      <changelist id="e52d2ec4-9e81-4a6d-8acd-664a5c875906" name="Changes" comment="" />
+      <created>1655882676392</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1647956079816</updated>
-      <workItem from="1647956080911" duration="701000" />
-      <workItem from="1647956801388" duration="21000" />
-      <workItem from="1647956848439" duration="52000" />
+      <updated>1655882676392</updated>
+      <workItem from="1655882677517" duration="1689000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/coffeeMachine_Exercice/Nespresso.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
