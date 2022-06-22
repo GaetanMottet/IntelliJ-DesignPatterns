@@ -166,7 +166,8 @@ Permet de créer des familles d’objets apparentés sans préciser leur classe 
 Bien que les fabriques concrètes instancient des produits concrets, 
 leurs méthodes de création ont une valeur de retour correspondant aux produits abstraits. 
 Le code client qui sollicite une fabrique est ainsi isolé de la variante du produit obtenu. 
-Le client peut travailler avec n’importe quelle variante de fabrique ou produit, tant qu’il interagit avec les interfaces abstraites.
+Le client peut travailler avec n’importe quelle variante de fabrique ou produit,
+tant qu’il interagit avec les interfaces abstraites.
 ______________________________
 PROBLEMATIQUE - CAS - Exple
 - magasin de meubles : chaise, Sofa, table basse && Art déco, Victorien, Moderne
